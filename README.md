@@ -36,6 +36,7 @@ SLAM-PHP/
 
 ### 1. Créer la base de données
 Exécutez le script SQL situé dans `Database/creation.sql` pour créer les tables :
+- **UTILISATEURS** : Stocké les comptes créer par les admins dans la base de donnée
 - **TYPEE** : Types de matériel (PC, Écran, CPU, RAM, etc.)
 - **MATERIEL** : Inventaire des équipements
 
