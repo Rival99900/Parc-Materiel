@@ -41,7 +41,7 @@ Exécutez le script SQL situé dans `Database/creation.sql` pour créer les tabl
 - **MATERIEL** : Inventaire des équipements
 
 ### 2. Configurer les identifiants
-Modifiez le fichier `Config/credentials.php` avec vos identifiants MySQL :
+Modifiez le fichier `Config/credentials-exemple.php` avec vos identifiants MySQL :
 ```php
 $host = "127.0.0.1";       // Serveur MySQL
 $dbname = "parc_materiel";  // Nom de la base
