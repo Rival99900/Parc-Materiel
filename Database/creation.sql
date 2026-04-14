@@ -3,7 +3,7 @@ CREATE TABLE UTILISATEURS (
     login VARCHAR(50) NOT NULL UNIQUE,
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
-    date_creation DATETIME DEFAULT CURRENT_TIMESTAMP
+    date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE TYPEE (
@@ -33,7 +33,7 @@ INSERT INTO TYPEE (libelle) VALUES
 ('OS'),
 ('Batterie');
 
-INSERT INTO MATERIEL VALUES
+INSERT INTO MATERIEL (idMateriel, nom, annee, details, idType, idParent) VALUES
 (1, 'PC 1 – Unité centrale', 2016, NULL, 1, NULL),
 (2, 'PC 2 – Unité centrale', 2017, NULL, 1, NULL),
 (3, 'PC 3 – Portable', 2015, 'Inspiron 15-3558', 1, NULL),
@@ -54,7 +54,7 @@ INSERT INTO MATERIEL VALUES
 (22, 'Disque PC2', 2017, 'SSD A400 240 Go', 5, 2),
 (23, 'GPU PC2', 2017, 'Intel HD 630', 6, 2),
 (24, 'Carte réseau PC2', 2017, '1 Gbps', 7, 2),
-(25, 'OS PC2', 2017, 'Pas d'OS', 8, 2),
+(25, 'OS PC2', 2017, 'Pas d''OS', 8, 2),
 
 (30, 'CPU PC3', 2015, 'Intel Core i3-5005U', 3, 3),
 (31, 'RAM PC3', 2015, '4 Go DDR3L', 4, 3),
